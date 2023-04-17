@@ -1,5 +1,9 @@
 # SNA2-PROJECT
 Test for Sna2 Project
 
-## Secon level heading
+## Second level heading
 Hello
+- first bullet
+- second bullet
+
+markdon syntax for gitshub
