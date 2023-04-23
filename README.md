@@ -1,9 +1,26 @@
-# SNA2-PROJECT
-Test for Sna2 Project
+# HOLLYWOOD ELITISM
+Sna2 Final Project - Mia K. Bellemare, Angie Zarich, Tara rafaty and Kanami Konishi
 
-## Second level heading
+## Introduction
 Hello
 - first bullet
 - second bullet
+
+## Hypotheses
+
+
+##Methodology
+
+
+##Results
+
+
+
+##Analysis
+
+
+##Conclusions 
+
+
 
 markdon syntax for gitshub
