@@ -2,25 +2,20 @@
 Sna2 Final Project - Mia K. Bellemare, Angie Zarich, Tara rafaty and Kanami Konishi
 
 ## Introduction
-Hello
-- first bullet
-- second bullet
+
 
 ## Hypotheses
 
 
-##Methodology
+## Methodology
 
 
-##Results
-
-
-
-##Analysis
-
-
-##Conclusions 
+## Results
 
 
 
-markdon syntax for gitshub
+## Analysis
+
+
+## Conclusions 
+
