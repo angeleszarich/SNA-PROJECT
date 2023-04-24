@@ -33,24 +33,24 @@ _Leonardo DiCaprio:_
 - Betweenness Centrality: 0.15300935623516262
 - Clustering Coefficient: 0.137
 - Films starred in:
-1. Inception
-5. Wolf of Wall Street
-7. Shutter Island
-32. The Revenant
-39. Once Upon a Time...in Hollywood
+ 1. Inception
+ 5. Wolf of Wall Street
+ 7. Shutter Island
+ 32. The Revenant
+ 39. Once Upon a Time...in Hollywood
 
 _Chris Evans:_
 - Degree Centrality: 0.090
 - Betweenness Centrality: 0.05281385281385282
 - Clustering Coefficient: 0.26373626373626374
 - Films starred in:
-6. Avengers Assemble
-10. Avengers Endgame
-11. Avengers Infinity War
-19. Avengers: Age of Ultron
-24. Captain America: The Winter Soldier
-25. Captain Amercia: The First Avenger
-33. Captain America: Civil War
+ 6. Avengers Assemble
+ 10. Avengers Endgame
+ 11. Avengers Infinity War
+ 19. Avengers: Age of Ultron
+ 24. Captain America: The Winter Soldier
+ 25. Captain Amercia: The First Avenger
+  33. Captain America: Civil War
 46. Knives Out
 
 
