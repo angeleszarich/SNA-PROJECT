@@ -11,7 +11,8 @@ Sna2 Final Project - Mia K. Bellemare, Angie Zarich, Tara rafaty and Kanami Koni
 
 
 ## Results
-
+![<img width="517" alt="python graph" src="https://user-images.githubusercontent.com/130977477/233947068-0ed112a9-66a2-485d-a487-97da305fc199.png">
+]
 
 
 ## Analysis
