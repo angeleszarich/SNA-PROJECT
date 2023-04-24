@@ -18,7 +18,8 @@ Our code can be seen [here](https://colab.research.google.com/drive/1YjDicn5V7WQ
 Organizing the clusters.
 
 
-
+<img width="477" alt="graph 3 " src="https://user-images.githubusercontent.com/130977477/233955116-1489ee2e-a14d-48ac-a2e9-e6e3937511ae.png">
+Relationship between Node degree and Betweennes Centrality
 
 
 ## Analysis
@@ -30,7 +31,7 @@ First of all from the visualization of the social network, we were able to analy
 
  On the other hand, the other actors that do not belong to that cluster are mostly only connected to actors that they filmed the same movie with. However it is not necessarily the case that those actors are from the films rated very low in the list. For example, although the actors are isolated from the others, films such as “Deadpool” (2016) and "Intouchables” (2011) are respectively ranked 12th and 20th, which is not a low rank out of 50. This could be because the social network of actors is not a homogeneous group, and there may be subgroups or clusters within the network that are more tightly connected than others. In the case of "Intouchables,” it is a French produced film, making it less likely for its actors to be connected with other mainstream Hollywood actors. Yet it is true that actors that starred in any movie above rank 11, belong in the large clustered network, indicating the possibility of actors in high rated films to be more likely to be featured in other top rated films due to their personal connections within the industry. 
  
- ### Some Specific Actors and betweenes centrality
+ ### Some Specific Actors and betweennes centrality
 _Leonardo DiCaprio:_ 
 - Degree Centrality: 0.116 HIGHEST 
 - Betweenness Centrality: 0.15300935623516262
