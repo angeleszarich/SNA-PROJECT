@@ -41,37 +41,20 @@ _Chris Evans:_
 - Degree Centrality: 0.090
 - Betweenness Centrality: 0.05281385281385282
 - Clustering Coefficient: 0.26373626373626374
-- Films starred in:
-  6. Avengers Assemble
-  10. Avengers Endgame
-  11. Avengers Infinity War
-  19. Avengers: Age of Ultron
-  24. Captain America: The Winter Soldier
-  25. Captain Amercia: The First Avenger
-  33. Captain America: Civil War
-  46. Knives Out
+- Films starred in:6. Avengers Assemble 10. Avengers Endgame 11. Avengers Infinity War  19. Avengers: Age of Ultron 24. Captain America: The Winter Soldier 25. Captain Amercia: The First Avenger 33. Captain America: Civil War 46. Knives Out
 
 _Robert Downey Jr.:_
 - Degree Centrality: 0.07096774193548387
 - Betweenness Centrality: 0.04203323558162264
 - Clustering Coefficient: 0.327
-- Films starred in:
-  6. Avengers Assemble
-  10. Avengers Endgame
-  11. Avengers: Infinity War
-  19. Avengers: Age of Ultron
-  22. Iron Man 3
-  31. Iron Man 2
-  33. Captain Amercia: Civil War
+- Films starred in: 6. Avengers Assemble 10. Avengers Endgame  11. Avengers: Infinity War  19. Avengers: Age of Ultron
+  22. Iron Man 3 31. Iron Man 2 33. Captain Amercia: Civil War
 
 _Matthew McConaughey:_
 - Degree Centrality: 0.04516129032258064
 - Betweenness Centrality: 0.02787320206675043
 - Clustering Coefficient: 0.42857142857142855
-- Films starred in:
-  2. Interstellar
-  5. The Wolf of Wall Street
-  35. The Imitation Game
+- Films starred in: 2. Interstellar 5. The Wolf of Wall Street  35. The Imitation Game
 
 Leonardo DiCaprio has the highest betweenness centrality, which means he is the most important node in the network. This makes sense given that he has been in a number of high-profile films and has worked with many of the other actors on the list.
 
