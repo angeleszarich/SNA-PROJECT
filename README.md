@@ -12,13 +12,20 @@ Sna2 Final Project - Mia K. Bellemare, Angie Zarich, Tara rafaty and Kanami Koni
 
 ## Methodology
 
+### Data Recollection Methodology
 
+Data was collected from a List of movies made by IMDB. We used the first 50 top rated movies, to analyse how actors were connected among them. The list can be seen [here](https://www.imdb.com/search/title/?release_date=2010,2019&title_type=feature&sort=num_votes,desc). 
+
+
+### Coding Methodology
+
+Data was scraped from Imdb using BeautifulSoup package. We got the list of 50 movies, and then the top 5 actors from each movie. We setted the actrs as nodes, and the filmas as edges to obtain the network statistics. We created an interactive network graph using Sigma and other visualisations. 
 
 Our code can be seen [here](https://colab.research.google.com/drive/1YjDicn5V7WQIe2QNg8_8qkkFQl55XCPD?usp=sharing)
 
 ## Results
 <img width="517" alt="python graph" src="https://user-images.githubusercontent.com/130977477/233947068-0ed112a9-66a2-485d-a487-97da305fc199.png">
-Organizing the clusters.
+Organizing the clusters to generate an interactive method.
 
 
 <img width="477" alt="graph 3 " src="https://user-images.githubusercontent.com/130977477/233955116-1489ee2e-a14d-48ac-a2e9-e6e3937511ae.png">
@@ -30,6 +37,7 @@ The aim of our research was to explore whether top rated actors are the most wel
 
 ### General results 
 <img width="223" alt="graph 2 " src="https://user-images.githubusercontent.com/130977477/233947603-4c526193-3192-4d58-af71-bdd19e2789bc.png">
+
 First of all from the visualization of the social network, we were able to analyze the overall structure of the industry. As the graph shows, there is one prominent cluster, which consists of most of the actors in the network. From this we can understand that in general, actors from top rated movies are connected with one another through a large network, although the diameter of the clustered network identifies that those ties may not be strong. This contradicts with the “six degrees of separation"[^1]. theory which suggests that any two individuals in the world can be connected through a network of no more than six intermediaries. One reason that could lead to this result is the fact that the interaction between actors is not very fluid; it takes an average of 4 to 5 years to produce 1 film. Thus considering how the data we scraped was only from a span of 10 years, we can predict that actors did not have enough time to appear in many films, which would explain why many of them are not strongly tied with one another. 
 
  On the other hand, the other actors that do not belong to that cluster are mostly only connected to actors that they filmed the same movie with. However it is not necessarily the case that those actors are from the films rated very low in the list. For example, although the actors are isolated from the others, films such as “Deadpool” (2016) and "Intouchables” (2011) are respectively ranked 12th and 20th, which is not a low rank out of 50. This could be because the social network of actors is not a homogeneous group, and there may be subgroups or clusters within the network that are more tightly connected than others. In the case of "Intouchables,” it is a French produced film, making it less likely for its actors to be connected with other mainstream Hollywood actors. Yet it is true that actors that starred in any movie above rank 11, belong in the large clustered network, indicating the possibility of actors in high rated films to be more likely to be featured in other top rated films due to their personal connections within the industry. 
