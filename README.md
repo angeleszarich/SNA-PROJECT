@@ -25,10 +25,12 @@ Our code can be seen [here](https://colab.research.google.com/drive/1YjDicn5V7WQ
 
 ## Results
 <img width="517" alt="python graph" src="https://user-images.githubusercontent.com/130977477/233947068-0ed112a9-66a2-485d-a487-97da305fc199.png">
+
 Organizing the clusters to generate an interactive method.
 
 
 <img width="477" alt="graph 3 " src="https://user-images.githubusercontent.com/130977477/233955116-1489ee2e-a14d-48ac-a2e9-e6e3937511ae.png">
+
 Relationship between Node degree and Betweennes Centrality
 
 
@@ -45,7 +47,7 @@ First of all from the visualization of the social network, we were able to analy
  [^1]:Watts, D. J., & Strogatz, S. H. (1998). Collective dynamics of "small-world" networks. Nature, 393(6684), 440-442. [Link](https://drive.google.com/file/d/16S35ZnSkVf6FwNbc-yzeQ9QHNerguISo/view?usp=sharing) .
  
  
- ### Some Specific Actors and betweennes centrality
+### Some Specific Actors and betweennes centrality
 
 👤 _Leonardo DiCaprio:_ 
 - Degree Centrality: 0.116 HIGHEST 
