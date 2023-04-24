@@ -37,8 +37,8 @@ First of all from the visualization of the social network, we were able to analy
  [^1]:Watts, D. J., & Strogatz, S. H. (1998). Collective dynamics of "small-world" networks. Nature, 393(6684), 440-442. [Link](https://drive.google.com/file/d/16S35ZnSkVf6FwNbc-yzeQ9QHNerguISo/view?usp=sharing) .
  
  
- 
  ### Some Specific Actors and betweennes centrality
+
 👤 _Leonardo DiCaprio:_ 
 - Degree Centrality: 0.116 HIGHEST 
 - Betweenness Centrality: 0.15300935623516262
@@ -66,13 +66,13 @@ First of all from the visualization of the social network, we were able to analy
 
 Leonardo DiCaprio has the highest betweenness centrality, which means he is the most important node in the network. This makes sense given that he has been in a number of high-profile films and has worked with many of the other actors on the list.
 
- ### Some Specific Actors and clustering coefficient
+### Some Specific Actors and clustering coefficient
  
 Looking at the clustering coefficients provided, we can see that some actors have very high clustering coefficients of 1.0, indicating that all of their neighbours are connected to each other as well. For example, Gary Oldman, Daniel Radcliffe, Emma Watson, Joseph Gordon-Levitt, etc.
 
 On the other hand, some actors have lower clustering coefficients, indicating that their neighbors are not as tightly connected to each other. For example, Leonardo DiCaprio has a clustering coefficient of 0.137, while Matthew McConaughey has a clustering coefficient of 0.429. Scarlett Johansson has a clustering coefficient of 0.619, while Robert Downey Jr. has a clustering coefficient of 0.327.
 
- ### Some Specific Actors and degree centrality
+### Some Specific Actors and degree centrality
  
 Looking at the degree centrality values provided, we can see that Leonardo DiCaprio has the highest degree centrality value of 0.116, indicating that he is the most connected actor in the network. Other highly connected actors include Chris Evans with a value of 0.090 and Robert Downey Jr. with a value of 0.071. These actors are likely to be important in the network due to their high number of connections.
 
