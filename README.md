@@ -5,6 +5,8 @@ Sna2 Final Project - Mia K. Bellemare, Angie Zarich, Tara rafaty and Kanami Koni
 
 
 ## Hypotheses
+🔍 Actors in high rated films are more likely to be featured in other top rated films, due to their personal connections in the industry
+🔍 Strength of weak ties, small world problem
 
 
 ## Methodology
@@ -36,26 +38,26 @@ First of all from the visualization of the social network, we were able to analy
  
  
  ### Some Specific Actors and betweennes centrality
-_Leonardo DiCaprio:_ 
+👤_Leonardo DiCaprio:_ 
 - Degree Centrality: 0.116 HIGHEST 
 - Betweenness Centrality: 0.15300935623516262
 - Clustering Coefficient: 0.137
 - Films starred in: 1. Inception 5. Wolf of Wall Street 7. Shutter Island 32. The Revenan 39. Once Upon a Time...in Hollywood
 
-_Chris Evans:_
+👤 _Chris Evans:_
 - Degree Centrality: 0.090
 - Betweenness Centrality: 0.05281385281385282
 - Clustering Coefficient: 0.26373626373626374
 - Films starred in:6. Avengers Assemble 10. Avengers Endgame 11. Avengers Infinity War  19. Avengers: Age of Ultron 24. Captain America: The Winter Soldier 25. Captain Amercia: The First Avenger 33. Captain America: Civil War 46. Knives Out
 
-_Robert Downey Jr.:_
+👤 _Robert Downey Jr.:_
 - Degree Centrality: 0.07096774193548387
 - Betweenness Centrality: 0.04203323558162264
 - Clustering Coefficient: 0.327
 - Films starred in: 6. Avengers Assemble 10. Avengers Endgame  11. Avengers: Infinity War  19. Avengers: Age of Ultron
   22. Iron Man 3 31. Iron Man 2 33. Captain Amercia: Civil War
 
-_Matthew McConaughey:_
+👤 _Matthew McConaughey:_
 - Degree Centrality: 0.04516129032258064
 - Betweenness Centrality: 0.02787320206675043
 - Clustering Coefficient: 0.42857142857142855
