@@ -6,6 +6,7 @@ Sna2 Final Project - Mia K. Bellemare, Angie Zarich, Tara rafaty and Kanami Koni
 
 ## Hypotheses
 🔍 Actors in high rated films are more likely to be featured in other top rated films, due to their personal connections in the industry
+
 🔍 Strength of weak ties, small world problem
 
 
@@ -38,7 +39,7 @@ First of all from the visualization of the social network, we were able to analy
  
  
  ### Some Specific Actors and betweennes centrality
-👤_Leonardo DiCaprio:_ 
+👤 _Leonardo DiCaprio:_ 
 - Degree Centrality: 0.116 HIGHEST 
 - Betweenness Centrality: 0.15300935623516262
 - Clustering Coefficient: 0.137
