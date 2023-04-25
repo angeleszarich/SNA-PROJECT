@@ -56,6 +56,14 @@ By obtaining the above statistics we could meaningfully analyse our network and 
 
 
 ## Results
+
+Once the coding process was complete, we obtained our visualisations and statistics. Sigma created our network and we obtained an interactive graph which was initially hard to read (see figure 1), but once refined with the software we created a much more visually meaningful visualisation (figure 2). 
+
+We also obtained the mentioned social network analysis statistics and created tables in order to compare them by actor. The figures obtained for betweenness centrality, degree centrality, and clustering coefficient can be seen in tables 1, 2, and 3, respectfully.
+
+It is important to note that when attempting to calculate the diameter of our social network, we obtained an error code. As stated, the diameter of a network is the maximum distance between any two nodes in the network however as we can see in figure 2, there are many nodes that have no connection whatsoever, meaning that the diameter of the network does not exist, or can be assumed to be infinite.
+
+
 <img width="517" alt="python graph" src="https://user-images.githubusercontent.com/130977477/233947068-0ed112a9-66a2-485d-a487-97da305fc199.png">
 
 Organizing the clusters to generate an interactive method.
