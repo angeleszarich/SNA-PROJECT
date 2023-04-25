@@ -3,6 +3,14 @@ Sna2 Final Project - Mia K. Bellemare, Angie Zarich, Tara rafaty and Kanami Koni
 
 ## Introduction
 
+The Hollywood film industry is known for its glamorous world of movies and celebrities, where actors often work together in multiple films, forming a web of connections. For our  final project, our team has decided to focus on this aspect of Hollywood by analysing the network of connections among top-rated actors in the decade spanning from 2010 to 2019. In this analysis, we aim to explore Hollywood elitism and connect it to the concepts of small world problems and the strength of weak ties, which we have discussed in class.
+
+To conduct our analysis, we selected the top 50 rated films on IMDb, sorted by votes,  during the decade and considered the actors featured in them as nodes and the films as edges connecting them. By examining these connections, we seek to answer the question: how well connected are the top-rated films' actors?
+In addition to our main research question, we have developed three hypotheses that we hope to validate through our analysis. Firstly, we expect that actors featured in the number one top-rated films will be more connected than those in lower-rated films. Finally, we believe that actors in high-rated films are more likely to be featured in other top-rated films due to their connections within the industry.
+
+Overall, we hope that our analysis will provide a deeper understanding of the Hollywood elitism, the relationships among Hollywood's top actors and how they contribute to the success of top-rated films.
+
+
 
 ## Hypotheses
 🔍 Actors in high rated films are more likely to be featured in other top rated films, due to their personal connections in the industry
