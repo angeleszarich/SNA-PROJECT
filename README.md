@@ -64,16 +64,6 @@ We also obtained the mentioned social network analysis statistics and created ta
 It is important to note that when attempting to calculate the diameter of our social network, we obtained an error code. As stated, the diameter of a network is the maximum distance between any two nodes in the network however as we can see in figure 2, there are many nodes that have no connection whatsoever, meaning that the diameter of the network does not exist, or can be assumed to be infinite.
 
 
-<img width="517" alt="python graph" src="https://user-images.githubusercontent.com/130977477/233947068-0ed112a9-66a2-485d-a487-97da305fc199.png">
-
-Organizing the clusters to generate an interactive method.
-
-
-<img width="477" alt="graph 3 " src="https://user-images.githubusercontent.com/130977477/233955116-1489ee2e-a14d-48ac-a2e9-e6e3937511ae.png">
-
-Relationship between Node degree and Betweennes Centrality
-
-
 ## Analysis
 
 First of all from the visualization of the social network, we were able to analyze the overall structure of the industry. As seen in figure 2, there is one prominent cluster, which consists of most of the actors in the network. From this we can understand that in general, actors from top rated movies are connected with one another through a large network, although the diameter of the clustered network identifies that those ties may not be strong. This contradicts with the Migram’s “six degrees of separation” theory (1967) as well one of our initial hypotheses. One reason that could lead to this result is the fact that the interaction between actors is not very fluid; it takes an average of 4 to 5 years to produce 1 film. Thus considering how the data we scraped was only from a span of 10 years, we can predict that actors did not have enough time to appear in many films, which would explain why many of them are not strongly tied with one another. It is also important to note that, whilst not connected in our social network, this does not signify that these actors are not connected at all. Therefore, we cannot assume from our analysis that Milgram’s theory is incorrect, as we have not considered the whole lifetime of each actor and other ways in which they may have personal connections. We can only assert that, within the 10-year span and these top rated films, Milgram’s theory is not upheld.
@@ -112,3 +102,34 @@ Whilst our hypothesis about the diameter of the network was unfortunately beyond
 An interesting detail we discovered whilst undertaking this analysis is that the top 3 films of the list are all directed by Christopher Nolan. Thus, directors and production staff may also play an important role in facilitating ties within Hollywood as they act as the hiring staff within the industry and therefore may follow a similar theory as asserted by Granovetter (1973) – they provide novel connections and information by connecting other actors through their productions. Further social network study including directors would provide more interesting and meaningful data, as well as possibly studying the network as a dynamic social network to understand how ties develop over time within the industry, as done by Kossinets and colleagues, in their ‘empirical analysis of an evolving social network’ (Kossinets et. al, 2006). 
 
 Overall, our research provides insight into Hollywood elitism and its impact on the film industry.
+
+
+## Apendix 
+
+
+<img width="312" alt="figure 1" src="https://user-images.githubusercontent.com/130977477/234343171-eef7fd1e-8257-4aec-84da-839cfad3f530.png">
+
+<img width="311" alt="Figure 2" src="https://user-images.githubusercontent.com/130977477/234343205-e4239de3-16a6-4ec4-92a8-cc434c48ba23.png">
+
+<img width="595" alt="Figure 3" src="https://user-images.githubusercontent.com/130977477/234343242-fbe86440-d652-4513-b351-f938656f7756.png">
+
+<img width="475" alt="Figure 4 " src="https://user-images.githubusercontent.com/130977477/234343274-98d38b65-f17f-4b09-83e4-61dfc68933a0.png">
+
+<img width="561" alt="Figure 5 " src="https://user-images.githubusercontent.com/130977477/234343297-fcd7c0b8-8d13-4dac-8897-252382a1c105.png">
+
+<img width="569" alt="Figure 6" src="https://user-images.githubusercontent.com/130977477/234343324-bff65a29-d4db-4baf-8e3e-1b7c99c622d4.png">
+
+<img width="130" alt="Table 1" src="https://user-images.githubusercontent.com/130977477/234343355-2d2092e6-ce73-4051-8535-e029e35e17bc.png"> <img width="205" alt="Table 2" src="https://user-images.githubusercontent.com/130977477/234343421-10f15b55-4163-4a73-8ebb-d38a51e71aa3.png"> <img width="121" alt="Table 3 " src="https://user-images.githubusercontent.com/130977477/234343443-43f0724c-abaf-4384-b9ed-51422346af09.png">
+
+
+
+
+## Bibliography
+
+- Granovetter, M., 1973. The Strength of Weak Ties. American Journal of Sociology, 78(6), pp. 1360- 1380. 
+
+- Kossinets, G. and Watts, D.J., 2006. Empirical analysis of an evolving social network. science, 311(5757), pp.88-90.
+
+- Milgram, S. (1967). The small world problem. Psychology Today, 2(1), pp. 60-67.
+
+
