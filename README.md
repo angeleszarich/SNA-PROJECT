@@ -1,35 +1,59 @@
-# HOLLYWOOD ELITISM
+# Hollywood Elitism: the social network of the film industry
 Sna2 Final Project - Mia K. Bellemare, Angie Zarich, Tara rafaty and Kanami Konishi
 
 ## Introduction
 
-The Hollywood film industry is known for its glamorous world of movies and celebrities, where actors often work together in multiple films, forming a web of connections. For our  final project, our team has decided to focus on this aspect of Hollywood by analysing the network of connections among top-rated actors in the decade spanning from 2010 to 2019. In this analysis, we aim to explore Hollywood elitism and connect it to the concepts of small world problems and the strength of weak ties, which we have discussed in class.
+The Hollywood film industry is known for its glamorous world of movies and celebrities, where actors often work together in multiple films, forming a web of connections and close personal relationships. But how many of the opportunities and film collaborations come from use of personal connections rather than talent?
 
-To conduct our analysis, we selected the top 50 rated films on IMDb, sorted by votes,  during the decade and considered the actors featured in them as nodes and the films as edges connecting them. By examining these connections, we seek to answer the question: how well connected are the top-rated films' actors?
-In addition to our main research question, we have developed three hypotheses that we hope to validate through our analysis. Firstly, we expect that actors featured in the number one top-rated films will be more connected than those in lower-rated films. Finally, we believe that actors in high-rated films are more likely to be featured in other top-rated films due to their connections within the industry.
-
-Overall, we hope that our analysis will provide a deeper understanding of the Hollywood elitism, the relationships among Hollywood's top actors and how they contribute to the success of top-rated films.
-
+Our team has decided to focus on the role of elitism and potential nepotism in Hollywood by analysing the network of connections among the actors of the top-rated movies in the decade spanning from 2010 to 2019. In this analysis, we aim to explore the role of personal connections within opportunities in the film industry from the viewpoint of social network analysis, taking into account Granovetter’s theory of the strength of weak ties (1973), and Milgram’s small world problem (1967). We begin by taking our data from the most popular public online film rating database, IMDb, by scraping the data of the top 50 films from the decade spanning from 2010-2019. From there we created a social network of the actors involved in said films, utilising the shared films as their connections within the network. By doing so, and obtaining other social network analyses metrics, we could understand where actors lied within this network of the most prestigious films of the decade, and whether there were certain patterns observed. By examining these connections, we seek to answer the question: how well connected are the top-rated films' actors? Overall, we hope that our analysis will provide a deeper understanding of the Hollywood elitism, the relationships among Hollywood's top actors and how they contribute to the success of top-rated films.
 
 
 ## Hypotheses
-🔍 Actors in high rated films are more likely to be featured in other top rated films, due to their personal connections in the industry
 
-🔍 Strength of weak ties, small world problem
+From reviewing the literature and our initial contextual knowledge of the industry, we developed hypotheses before analysing the data: 
+
+   🔍 Actors featured higher rated films will be more connected and important in the network than those in lower-rated films
+
+   🔍 Actors in high-rated films are more likely to be featured in other top-rated films due to their connections within the industry.
+
+   🔍 The social network will have a diameter <6
+
+Generally, we believe that we will find that the ranking the film that an actor is in will be proportional to their importance in the social network, meaning that their role within facilitating ties between actors will be high. We also believe to find that the actors within the highest rated films will be more likely to be present in other high rated films. The elitism and preference for actors who have already performed in high-rated pictures due to their established personal connections is our reason for this assumption. Finally we believe the social network will have a diameter less than 6 as presumed by Milgram (1967), and also due to the fact that the individuals we aim to analyse share a career path and therefore have a high probability of being connected.
 
 
 ## Methodology
 
-### Data Recollection Methodology
+In order to discover the social network of actors within top rated films, we utilised data from ‘IMDb’ (Internet Movie Database). This choice was made as it is the most popular form of online film ranking and therefore would have the most accurate data for us to analyse. We utilised the 50 top ranked films, by number of audience votes, from the decade of 2010-2019. Rather than looking at the 50 top rated movies of all time, we focused our analysis simply on one 10 year time span in order to increase the probability of the actors having ties; the likelihood that the actors from a top rated film from 1980 are connected to the actors from a film made in 2020 is quite unlikely due to generational differences and the changing landscape of the film industry and it therefore could mess with our analysis.
 
-Data was collected from a List of movies made by IMDB. We used the first 50 top rated movies, to analyse how actors were connected among them. The list can be seen [here](https://www.imdb.com/search/title/?release_date=2010,2019&title_type=feature&sort=num_votes,desc). 
+ > The list can be seen [here](https://www.imdb.com/search/title/?release_date=2010,2019&title_type=feature&sort=num_votes,desc). 
 
 
-### Coding Methodology
+Our simple four step methodology was as follows:
 
-Data was scraped from Imdb using BeautifulSoup package. We got the list of 50 movies, and then the top 5 actors from each movie. We setted the actrs as nodes, and the filmas as edges to obtain the network statistics. We created an interactive network graph using Sigma and other visualisations. 
+1. Scrape the data of movie titles and 5 main actors of each film
+2. Set the actors as nodes and movies as edges within our social network
+3. Create social network visualisation with data
+4. Find social network analysis statistics and create other graphed visualisations
 
-Our code can be seen [here](https://colab.research.google.com/drive/1YjDicn5V7WQIe2QNg8_8qkkFQl55XCPD?usp=sharing)
+
+The data was scraped in python using the BeautifulSoup package in conjunction with headers and user agents in order to bypass the IMDb bot anti-scraping measures put in place. Once the data was extracted, we created an interactive social network visualisation graph utilising networkx and Sigma. We set each actor as a node within the network and each movie as an edge in order to see how the movies connected the actors.
+
+After creating our initial visualisation, we again used networkx in order to get the betweenness centrality, degree centrality and, and clustering coefficient for each actor, as well as the diameter of the network. Each is defined as the following:
+
+
+**Betweenness centrality** : The number of shortest paths between pairs of nodes within the network that pass through the node. Measure of the importance of the node in facilitating communication.
+
+**Degree centrality**: The number of edges connected to a node divided by the total number of edges in the network. A measure of how well connected a node is in a network.
+
+**Clustering coefficient**: Measure of how tightly clustered a node’s neighbours are in a network.
+
+**Diameter**: The maximum distance between any two nodes in a network.
+
+By obtaining the above statistics we could meaningfully analyse our network and gain a deeper understanding in the most well-connected actors and the characteristics of the network as a whole.
+
+
+ > Our code can be seen [here](https://colab.research.google.com/drive/1YjDicn5V7WQIe2QNg8_8qkkFQl55XCPD?usp=sharing)
+
 
 ## Results
 <img width="517" alt="python graph" src="https://user-images.githubusercontent.com/130977477/233947068-0ed112a9-66a2-485d-a487-97da305fc199.png">
