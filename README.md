@@ -75,57 +75,40 @@ Relationship between Node degree and Betweennes Centrality
 
 
 ## Analysis
-The aim of our research was to explore whether top rated actors are the most well connected in the film industry. To do this we looked at the top 50 rated films on IMDb, based on the number of votes, released between 2010/01/01 and 2019/12/31. Each film consists of a list of 4 or 5 “stars”, who serve as the lead actors, and thus from the data we extracted their names to construct the nodes of our network. Each node is connected through a movie title, serving as the edge of the network. 
 
-### General results 
-<img width="223" alt="graph 2 " src="https://user-images.githubusercontent.com/130977477/233947603-4c526193-3192-4d58-af71-bdd19e2789bc.png">
+First of all from the visualization of the social network, we were able to analyze the overall structure of the industry. As seen in figure 2, there is one prominent cluster, which consists of most of the actors in the network. From this we can understand that in general, actors from top rated movies are connected with one another through a large network, although the diameter of the clustered network identifies that those ties may not be strong. This contradicts with the Migram’s “six degrees of separation” theory (1967) as well one of our initial hypotheses. One reason that could lead to this result is the fact that the interaction between actors is not very fluid; it takes an average of 4 to 5 years to produce 1 film. Thus considering how the data we scraped was only from a span of 10 years, we can predict that actors did not have enough time to appear in many films, which would explain why many of them are not strongly tied with one another. It is also important to note that, whilst not connected in our social network, this does not signify that these actors are not connected at all. Therefore, we cannot assume from our analysis that Milgram’s theory is incorrect, as we have not considered the whole lifetime of each actor and other ways in which they may have personal connections. We can only assert that, within the 10-year span and these top rated films, Milgram’s theory is not upheld.
 
-First of all from the visualization of the social network, we were able to analyze the overall structure of the industry. As the graph shows, there is one prominent cluster, which consists of most of the actors in the network. From this we can understand that in general, actors from top rated movies are connected with one another through a large network, although the diameter of the clustered network identifies that those ties may not be strong. This contradicts with the “six degrees of separation"[^1]. theory which suggests that any two individuals in the world can be connected through a network of no more than six intermediaries. One reason that could lead to this result is the fact that the interaction between actors is not very fluid; it takes an average of 4 to 5 years to produce 1 film. Thus considering how the data we scraped was only from a span of 10 years, we can predict that actors did not have enough time to appear in many films, which would explain why many of them are not strongly tied with one another. 
+On the other hand, the other actors that do not belong to that cluster are mostly only connected to actors that they filmed the same movie with. However it is not necessarily the case that those actors are from the films rated very low in the list. For example, although the actors are isolated from the others, films such as “Deadpool” (2016) and "Intouchables” (2011) are respectively ranked 12th and 20th, which is not a low rank out of 50. This could be because the social network of actors is not a homogeneous group, and there may be subgroups or clusters within the network that are more tightly connected than others. In the case of "Intouchables,” it is a French produced film, making it less likely for its actors to be connected with other mainstream Hollywood actors. Yet it is true that actors that starred in any movie above rank 11, belong in the large clustered network, indicating the possibility of actors in high rated films to be more likely to be featured in other top rated films due to their personal connections within the industry. 
 
- On the other hand, the other actors that do not belong to that cluster are mostly only connected to actors that they filmed the same movie with. However it is not necessarily the case that those actors are from the films rated very low in the list. For example, although the actors are isolated from the others, films such as “Deadpool” (2016) and "Intouchables” (2011) are respectively ranked 12th and 20th, which is not a low rank out of 50. This could be because the social network of actors is not a homogeneous group, and there may be subgroups or clusters within the network that are more tightly connected than others. In the case of "Intouchables,” it is a French produced film, making it less likely for its actors to be connected with other mainstream Hollywood actors. Yet it is true that actors that starred in any movie above rank 11, belong in the large clustered network, indicating the possibility of actors in high rated films to be more likely to be featured in other top rated films due to their personal connections within the industry. 
+Looking more specifically into particular statistics and actors within the network we find interesting assertions.
+
+### Betweenness centrality:
+
+Leonardo DiCaprio is the most important actor in the network according to his high betweenness centrality score of 0.153. This is because he has been in many high-profile films and has worked with many other actors on the list. Actors such as Joseph Gordon-Levitt, Elliot Page, Ken Watanabe, and others have a betweenness centrality score of 0, indicating that they are not important in facilitating communication between other nodes in the network. Matthew McConaughey has a relatively low betweenness centrality score compared to DiCaprio but still plays an important role in connecting other nodes in the network. Actors like Anne Hathaway, Jessica Chastain, Margot Robbie, and others have betweenness centrality scores greater than 0 but less than McConaughey's, meaning that they are less central to the network but still play an important role in connecting other nodes.
+
+### Degree centrality:
+
+In this analysis, the degree centrality values of actors in a network are provided, where each actor is assigned a value that represents the proportion of connections they have with other actors. It is observed that Leonardo DiCaprio has the highest degree centrality value, indicating that he is the most connected actor in the network, correlating with his high betweenness centrality. Other highly connected actors include Chris Evans and Robert Downey Jr. However, some actors such as Joseph Gordon-Levitt, Elliot Page, Ken Watanabe, and Mackenzie Foy have lower degree centrality values, suggesting that they are less connected in the network and may be less important. Nonetheless, other factors such as the strength and nature of the connections and their roles in the network can also impact their importance.
+
+### Clustering coefficient:
+
+We can observe that certain actors have very high clustering coefficients of 1.0, which means that all of their neighbors are connected to each other meaning they are not important within the network in facilitating ties – they do not act as bridges (sole connections between two nodes). These actors include Joseph Gordon-Levitt, Elliot Page, Ken Watanabe, Gary Oldman, Jamie Foxx, Christoph Waltz, Kerry Washington, Martin Scorsese, Jonah Hill, Emily Mortimer, Ben Kingsley, Joaquin Phoenix, Zazie Beetz, Frances Conroy, Chris Pratt, Vin Diesel and many others. Interestingly, these actors also have a betweenness centrality score of 0, again indicating that they are not important in facilitating communication between other nodes in the network.
+
+Conversely, some actors have lower clustering coefficients, which means that their neighbors are not as closely connected to each other. For instance, Leonardo DiCaprio has a clustering coefficient of 0.137, while Matthew McConaughey's clustering coefficient is 0.429. Scarlett Johansson's clustering coefficient is 0.619, while Robert Downey Jr.'s is 0.327.
+
+In general, the clustering coefficients reveal that certain actors are more central in the network than others. High clustering coefficients within our network tend to go hand in hand with low betweenness centralities and low degree centralities, due to the many homogenous clusters we see within our network.
+
+Figures 3, 4, 5, and 6 show isolated networks and statistics of some individuals within the network that seem to have high importance. As stated, Leonardo DiCaprio is the most important node in connecting and facilitating ties between actors. He acts as a bridge for many connections, and has starred in 5 of the top 50 films, 3 of which lie within the top 10, and exist across genres.
+
+From the statistics, we can understand that Matthew McConaughey is the second most important node within the network, having the second highest degree and betweenness centrality, however he only stars in 3 of the top 50 films. Two of these lie within the top 10, which aligns with our hypothesis about high rated actors being the most connected however goes against our other hypothesis about high rated actors starring in more highly rated films than others. Chris Evans and Robert Downey Jr. star in the most films within the top 50 (8 and 7, respectfully) which would make us believe, according to our hypothesis that they would be more central to the network than Matthew McConaughey. However, the majority of these films are within the Marvel franchise, meaning their connections are not as widespread across genre as Matthew McConaughey, despite them having lower clustering coefficients than him. We can potentially understand Matthew McConaughey’s importance within the network as the films he stars in are all of different genres and contain all different actors; although having less total ties he is a bridge for much more nodes than Chris Evans or Robert Downey Jr.
  
- [^1]:Watts, D. J., & Strogatz, S. H. (1998). Collective dynamics of "small-world" networks. Nature, 393(6684), 440-442. [Link](https://drive.google.com/file/d/16S35ZnSkVf6FwNbc-yzeQ9QHNerguISo/view?usp=sharing) .
- 
- 
-### Some Specific Actors and betweennes centrality
-
-👤 _Leonardo DiCaprio:_ 
-- Degree Centrality: 0.116 HIGHEST 
-- Betweenness Centrality: 0.15300935623516262
-- Clustering Coefficient: 0.137
-- Films starred in: 1. Inception 5. Wolf of Wall Street 7. Shutter Island 32. The Revenan 39. Once Upon a Time...in Hollywood
-
-👤 _Chris Evans:_
-- Degree Centrality: 0.090
-- Betweenness Centrality: 0.05281385281385282
-- Clustering Coefficient: 0.26373626373626374
-- Films starred in:6. Avengers Assemble 10. Avengers Endgame 11. Avengers Infinity War  19. Avengers: Age of Ultron 24. Captain America: The Winter Soldier 25. Captain Amercia: The First Avenger 33. Captain America: Civil War 46. Knives Out
-
-👤 _Robert Downey Jr.:_
-- Degree Centrality: 0.07096774193548387
-- Betweenness Centrality: 0.04203323558162264
-- Clustering Coefficient: 0.327
-- Films starred in: 6. Avengers Assemble 10. Avengers Endgame  11. Avengers: Infinity War  19. Avengers: Age of Ultron
-  22. Iron Man 3 31. Iron Man 2 33. Captain Amercia: Civil War
-
-👤 _Matthew McConaughey:_
-- Degree Centrality: 0.04516129032258064
-- Betweenness Centrality: 0.02787320206675043
-- Clustering Coefficient: 0.42857142857142855
-- Films starred in: 2. Interstellar 5. The Wolf of Wall Street  35. The Imitation Game
-
-Leonardo DiCaprio has the highest betweenness centrality, which means he is the most important node in the network. This makes sense given that he has been in a number of high-profile films and has worked with many of the other actors on the list.
-
-### Some Specific Actors and clustering coefficient
- 
-Looking at the clustering coefficients provided, we can see that some actors have very high clustering coefficients of 1.0, indicating that all of their neighbours are connected to each other as well. For example, Gary Oldman, Daniel Radcliffe, Emma Watson, Joseph Gordon-Levitt, etc.
-
-On the other hand, some actors have lower clustering coefficients, indicating that their neighbors are not as tightly connected to each other. For example, Leonardo DiCaprio has a clustering coefficient of 0.137, while Matthew McConaughey has a clustering coefficient of 0.429. Scarlett Johansson has a clustering coefficient of 0.619, while Robert Downey Jr. has a clustering coefficient of 0.327.
-
-### Some Specific Actors and degree centrality
- 
-Looking at the degree centrality values provided, we can see that Leonardo DiCaprio has the highest degree centrality value of 0.116, indicating that he is the most connected actor in the network. Other highly connected actors include Chris Evans with a value of 0.090 and Robert Downey Jr. with a value of 0.071. These actors are likely to be important in the network due to their high number of connections.
-
 
 ## Conclusions 
 
+Our research findings suggested that actors from top-rated movies are connected to one another through a large network, but the ties may not be strong. There is one prominent cluster consisting of most actors in the network, which can be seen as potentially the most ‘elitist’ cluster within the network, only containing actors in Hollywood films. This asserts that the problem of elitism and nepotism within the film industry is a Hollywood issue; actors from foreign films had no connections to the large cluster. Actors with long careers within Hollywood tend to have been the most important within the network, such as Leonardo DiCaprio, who had the highest betweenness centrality score, indicating that he plays a crucial role in connecting other nodes in the network. The research found that actors in high rated films are more likely to be featured in other top rated films due to their personal connections within the industry. The study suggests that the Hollywood industry's social network is not homogeneous and may have subgroups or clusters with varying degrees of connection. 
+
+Whilst our hypothesis about the diameter of the network was unfortunately beyond the scope of what we analysed, our other hypotheses with regards to higher rated actors being more connected were upheld, with the interesting exception of Matthew McConaughhey, who was one of the most well-connected actors within the network but only starred in 3 of the top 50 films.
+
+An interesting detail we discovered whilst undertaking this analysis is that the top 3 films of the list are all directed by Christopher Nolan. Thus, directors and production staff may also play an important role in facilitating ties within Hollywood as they act as the hiring staff within the industry and therefore may follow a similar theory as asserted by Granovetter (1973) – they provide novel connections and information by connecting other actors through their productions. Further social network study including directors would provide more interesting and meaningful data, as well as possibly studying the network as a dynamic social network to understand how ties develop over time within the industry, as done by Kossinets and colleagues, in their ‘empirical analysis of an evolving social network’ (Kossinets et. al, 2006). 
+
+Overall, our research provides insight into Hollywood elitism and its impact on the film industry.
