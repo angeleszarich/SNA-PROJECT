@@ -8,6 +8,13 @@ The Hollywood film industry is known for its glamorous world of movies and celeb
 Our team has decided to focus on the role of elitism and potential nepotism in Hollywood by analysing the network of connections among the actors of the top-rated movies in the decade spanning from 2010 to 2019. In this analysis, we aim to explore the role of personal connections within opportunities in the film industry from the viewpoint of social network analysis, taking into account Granovetter’s theory of the strength of weak ties (1973), and Milgram’s small world problem (1967). We begin by taking our data from the most popular public online film rating database, IMDb, by scraping the data of the top 50 films from the decade spanning from 2010-2019. From there we created a social network of the actors involved in said films, utilising the shared films as their connections within the network. By doing so, and obtaining other social network analyses metrics, we could understand where actors lied within this network of the most prestigious films of the decade, and whether there were certain patterns observed. By examining these connections, we seek to answer the question: how well connected are the top-rated films' actors? Overall, we hope that our analysis will provide a deeper understanding of the Hollywood elitism, the relationships among Hollywood's top actors and how they contribute to the success of top-rated films.
 
 
+## Literature Review 
+
+According to Granovetter's (1973) theory of the strength of weak ties, while strong ties, such as family members or close friends, share similar information and resources, it is weak ties, such as friends of friends or colleagues of family members, who provide access to novel information and opportunities by acting as bridges across network clusters: the only connections between two nodes within a network (Granovetter, 1973). These connections are crucial in social networks because they promote diversity of thought among populations by enabling the dissemination of information from otherwise homogeneous networks.
+
+Additionally, Milgram concludes in his experimental study about the small world problem (1967) that the average diameter of a social network – diameter being the longest shortest path between two nodes in a network – is never higher than 6, labelling the well-known phenomenon as the ‘six degrees of separation’. His theory applies to a widespread population over the US, and therefore, applying to our network analysis, it would be probable that our diameter would be much smaller than this due to the probable personal connections and shared professions of all members of the population.
+
+
 ## Hypotheses
 
 From reviewing the literature and our initial contextual knowledge of the industry, we developed hypotheses before analysing the data: 
@@ -104,7 +111,7 @@ An interesting detail we discovered whilst undertaking this analysis is that the
 Overall, our research provides insight into Hollywood elitism and its impact on the film industry.
 
 
-## Apendix 
+## Appendix 
 
 
 <img width="312" alt="figure 1" src="https://user-images.githubusercontent.com/130977477/234343171-eef7fd1e-8257-4aec-84da-839cfad3f530.png">
